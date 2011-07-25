@@ -1,5 +1,14 @@
+/**
+ * 
+ */
 package pk.assignment01.twodimensional;
 
-public abstract class TwoDimensionalShape {
+import pk.assignment01.Shape;
+
+/**
+ * @author Admin
+ *
+ */
+public interface TwoDimensionalShape extends Shape {
 
 }

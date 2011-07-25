@@ -1,18 +1,41 @@
+/**
+ * @author Admin
+ */
 package pk.assignment01.twodimensional;
 
-
-public class Square extends TwoDimensionalShape {
-
-    public Square() {
-        // TODO Auto-generated constructor stub
+/**
+ * @author Admin
+ * 
+ */
+public class Square implements TwoDimensionalShape {
+    private double edge = 0.0;
+    
+    /**
+     * @return the edge
+     */
+    public double getEdge() {
+        return edge;
     }
 
     /**
-     * @param args
+     * @param edge the edge to set
      */
-    public static void main(String[] args) {
-        // TODO Auto-generated method stub
+    public void setEdge(double edge) {
+        this.edge = edge;
+    }
 
+    /*
+     * (non-Javadoc)
+     * 
+     * @see pk.assignment01.Shape#getArea()
+     */
+    @Override
+    public double getArea() {
+        return Math.pow(edge, 2);
+    }
+    
+    public Square(double edge) {
+        this.setEdge(edge);
     }
 
 }
