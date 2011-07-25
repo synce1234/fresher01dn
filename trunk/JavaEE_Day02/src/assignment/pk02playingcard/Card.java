@@ -18,9 +18,7 @@ public class Card {
     private List<String> rankList = Arrays.asList(rankArray);
     private List<String> suitList = Arrays.asList(suitArray);
     /*
-     * trong bảng mã Unicode
-     * 9824 9829 9830 9827
-     * ♠ ♥ ♦ ♣
+     * trong bảng mã Unicode 9824 9829 9830 9827 ♠ ♥ ♦ ♣
      */
     private String suit = "";
     private String rank = "";
@@ -57,6 +55,7 @@ public class Card {
      */
     public void setRank(String rank) {
         this.rank = rank;
+        this.calculateCardValue();
     }
 
     /**
@@ -72,6 +71,7 @@ public class Card {
      */
     public void setSuit(String suit) {
         this.suit = suit;
+        this.calculateCardValue();
     }
 
     /**
@@ -83,13 +83,17 @@ public class Card {
 
         this.suit = suitArray[randomSuitIndex];
         this.rank = rankArray[randomRankIndex];
+        this.calculateCardValue();
+    }
 
+    private void calculateCardValue() {
         this.setCardValue((rankList.indexOf(this.rank) + 1) * 10
                 + (suitList.indexOf(this.suit) + 1));
     }
 
     /**
      * construct a new card with rank and suit in number
+     * 
      * @param rankInt
      * @param suitInt
      */
