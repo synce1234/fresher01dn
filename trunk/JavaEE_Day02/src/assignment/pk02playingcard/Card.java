@@ -24,6 +24,9 @@ public class Card {
      */
     private String suit = "";
     private String rank = "";
+    /**
+     * thứ tự của 1 lá bài trong 52 lá, lớn nhất là A-HEART, bé nhất là 2-SPADE
+     */
     private int cardValue = 0;
 
     /**
