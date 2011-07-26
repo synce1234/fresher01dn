@@ -3,6 +3,8 @@
  */
 package pk.assignment01.twodimensional;
 
+import pk.assignment01.Constants;
+
 /**
  * @author Admin
  * 
@@ -11,6 +13,26 @@ public class Triangle implements TwoDimensionalShape {
     private double firstEdge = 0.0;
     private double secondEdge = 0.0;
     private double thirdEdge = 0.0;
+
+    @Override
+    public void show() {
+        // // Triangle
+        // // double a = Math.random() * 10;
+        // // double b = Math.random() * 10;
+        // // double c = Math.random() * 10;
+        // // Triangle triangle = new Triangle(a, b, c);
+        // // System.out.println("Tam giác có 3 cạnh: ");
+        // // System.out.println("a = " + a + DON_VI_DO_CHIEU_DAI + " b = " + b
+        // // + DON_VI_DO_CHIEU_DAI + " c = " + c + DON_VI_DO_CHIEU_DAI);
+        // // System.out.println("thì có diện tích là " + triangle.getArea()
+        // // + DON_VI_DO_DIEN_TICH);
+
+        // Triangle - tam giác đều
+        System.out.println("Tam giác đều cạnh = " + this.firstEdge
+                + Constants.DON_VI_DO_CHIEU_DAI + "thì có diện tích: "
+                + this.getArea() + Constants.DON_VI_DO_DIEN_TICH);
+
+    }
 
     /**
      * Trong trường hợp tam giác đều
@@ -87,7 +109,8 @@ public class Triangle implements TwoDimensionalShape {
     @Override
     public double getArea() {
         double p = (firstEdge + secondEdge + thirdEdge) / 2;
-        double area = Math.sqrt(p * (p - firstEdge) * (p - secondEdge) * (p - thirdEdge));
+        double area = Math.sqrt(p * (p - firstEdge) * (p - secondEdge)
+                * (p - thirdEdge));
         return area;
     }
 

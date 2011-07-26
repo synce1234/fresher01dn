@@ -3,13 +3,21 @@
  */
 package pk.assignment01.twodimensional;
 
+import pk.assignment01.Constants;
+
 /**
  * @author Admin
  * 
  */
 public class Square implements TwoDimensionalShape {
     private double edge = 0.0;
-    
+    @Override
+    public void show() {
+         // Square
+         System.out.println("Hình vuông có cạnh là " + this.getEdge()
+         + Constants.DON_VI_DO_CHIEU_DAI + " thì có diện tích là: "
+         + this.getArea() + Constants.DON_VI_DO_DIEN_TICH);
+    }
     /**
      * @return the edge
      */

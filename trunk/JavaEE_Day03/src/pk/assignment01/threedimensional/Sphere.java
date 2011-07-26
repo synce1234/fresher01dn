@@ -3,12 +3,24 @@
  */
 package pk.assignment01.threedimensional;
 
+import pk.assignment01.Constants;
 /**
  * @author Admin
  * 
  */
 public class Sphere implements ThreeDimensionalShape {
     private double radius = 0.0;
+
+    @Override
+    public void show() {
+        // Sphere - hình cầu
+        System.out.println("Hình cầu có bán kính " + this.getRadius()
+                + Constants.DON_VI_DO_CHIEU_DAI + "thì có: ");
+        System.out.println("Diện tích bề mặt là: " + this.getArea()
+                + Constants.DON_VI_DO_DIEN_TICH);
+        System.out.println("Thể tích là: " + this.getVolume()
+                + Constants.DON_VI_DO_THE_TICH);
+    }
 
     /**
      * @param randomRadius
