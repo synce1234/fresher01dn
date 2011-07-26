@@ -13,4 +13,9 @@ public interface Shape {
      * @return
      */
     double getArea();
+    
+    /**
+     * show các thông tin ra màn hình
+     */
+    void show();
 }

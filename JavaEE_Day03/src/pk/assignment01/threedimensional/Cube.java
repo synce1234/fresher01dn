@@ -3,6 +3,8 @@
  */
 package pk.assignment01.threedimensional;
 
+import pk.assignment01.Constants;
+
 /**
  * @author Admin
  *
@@ -49,6 +51,17 @@ public class Cube implements ThreeDimensionalShape {
         double volume = 0.0;
         volume = Math.pow(edge, 3);
         return volume;
+    }
+    
+    @Override
+    public void show() {
+        // Cube
+        System.out.println("Hình lập phương có cạnh dài " + this.getEdge()
+                + Constants.DON_VI_DO_CHIEU_DAI + "thì có: ");
+        System.out.println("Diện tích bề mặt là: " + this.getArea()
+                + Constants.DON_VI_DO_DIEN_TICH);
+        System.out.println("Thể tích là: " + this.getVolume()
+                + Constants.DON_VI_DO_THE_TICH);
     }
 
 }
