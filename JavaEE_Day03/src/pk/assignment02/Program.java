@@ -15,8 +15,14 @@ public class Program {
      * @param args
      */
     public static void main(String[] args) {
-        // TODO Auto-generated method stub
-
+        MyCharSequence mcs = new MyCharSequence();
+        mcs.setData("Fresher01DN");
+        
+        char c = mcs.charAt(2);
+        MyCharSequence mcs2 = (MyCharSequence) mcs.subSequence(0, 4);
+        String str = mcs.toString();
+        int mcsLength = mcs.length();
+        
     }
 
 }
