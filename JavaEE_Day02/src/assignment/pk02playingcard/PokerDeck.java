@@ -1,7 +1,5 @@
 package assignment.pk02playingcard;
 
-import assignment.pk02playingcard.FullDeck;
-
 public class PokerDeck {
     private Card[] cards = new Card[5];
 
@@ -69,6 +67,7 @@ public class PokerDeck {
         }
     }
 
+    @SuppressWarnings("unused")
     private void calculatePokerRank() {
         
     }
