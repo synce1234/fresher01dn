@@ -6,22 +6,23 @@ package pk.assignment01.threedimensional;
 import pk.assignment01.Constants;
 
 /**
- * @author Admin
- *         Tetrahedron = tứ giác đều.
+ * @author Admin Tetrahedron = tứ giác đều.
  */
 public class Tetrahedron implements ThreeDimensionalShape {
 
     private double edge = 0.0;
+
     @Override
     public void show() {
-      // Tetrahedron
-         System.out.println("Hình tứ diện đều có cạnh dài " + this.getEdge()
-         + Constants.DON_VI_DO_CHIEU_DAI + "thì có: ");
-         System.out.println("Diện tích bề mặt : " + this.getArea()
-         + Constants.DON_VI_DO_DIEN_TICH);
-         System.out.println("Thể tích là: " + this.getVolume()
-         + Constants.DON_VI_DO_THE_TICH);
+        // Tetrahedron
+        System.out.println("Hình tứ diện đều có cạnh dài " + this.getEdge()
+                + Constants.DON_VI_DO_CHIEU_DAI + "thì có: ");
+        System.out.println("Diện tích bề mặt : " + this.getArea()
+                + Constants.DON_VI_DO_DIEN_TICH);
+        System.out.println("Thể tích là: " + this.getVolume()
+                + Constants.DON_VI_DO_THE_TICH);
     }
+
     /**
      * @return the edge
      */
@@ -30,7 +31,8 @@ public class Tetrahedron implements ThreeDimensionalShape {
     }
 
     /**
-     * @param edge the edge to set
+     * @param edge
+     *            the edge to set
      */
     public void setEdge(double edge) {
         this.edge = edge;
